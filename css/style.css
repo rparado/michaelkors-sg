@@ -325,6 +325,9 @@ select.error {
 .bday-label {
     text-align: left;
 }
+label.error {
+    font-size: 12px;
+}
 #store_box {
     width: 960px;
     margin: 0 auto;

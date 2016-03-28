@@ -137,63 +137,6 @@
 			Cufon.replace('#mkmusthave p', {
 			    fontFamily: 'Gotham Book'
 			});
-			 $("#form83").validate({
-		        rules: {
-		            Field1: {
-		                required: true
-		            },
-		            Field2: {
-		                required: true
-		            },
-		            Field3: {
-		                required: true,
-		                email: true
-		            },
-		            Field4: {
-		                required: true
-		            },
-		            Field5: {
-		                required: true
-		            },
-		            Field6: {
-		                required: true
-		            },
-		            Field7: {
-		                required: true
-		            }
-		        },
-		        messages: {
-		            Field1: {
-		                required: "Please enter first name."
-		            },
-		            Field2: {
-		                required: "Please enter last name."
-		            },
-		            Field3: {
-		                required: "Please enter email address.",
-		                email: "Please enter valid email address."
-		            },
-		            Field4: {
-		                required: "Please enter mobile number."
-		            },
-		            Field5: {
-		                required: "Please enter day."
-		            },
-		            Field6: {
-		                required: "Please enter month."
-		            },
-		            Field7: {
-		                required: "Please enter year."
-		            }
-		        },
-		        submitHandler: function(form) {
-		            $('.popup.loading').show();
-		            document.getElementById('saveForm').disabled = true;
-		            form.submit();
-		        }
-		    });
-
-		   
 		</script>
 		<script type="text/javascript">
 			bioEp.init({
@@ -263,7 +206,7 @@
 			</div>
 			<a name=home></a>
 			<div id=home>
-				<iframe width=960 height=540 src="https://www.youtube.com/embed/Vjh04k66l8c?vq=hd720&rel=0&autoplay=1&amp;showinfo=0" frameborder=0 allowfullscreen></iframe>
+				<iframe width=960 height=540 src="https://www.youtube.com/embed/Vjh04k66l8c?vq=hd720&rel=0&autoplay=0&amp;showinfo=0" frameborder=0 allowfullscreen></iframe>
 				<img style="padding-top:60px;" src="images/MK_Indonesia_EndlessSunday_090316_03.jpg" alt="denim for days"/>
 				<p style="color:#000;font-size:15px;margin-left:50px; margin-right:50px;">SPRING&#39;S BREEZY MUST-HAVES ARE ALL ABOUT RELAXED POLISH. LAID-BACK YET CHIC, EYELET LACE, SCALLOPED TRIMS AND FEMININE SILHOUETTES ARE AT THE TOP OF OUR WISH LIST. </p>
 				<br>
@@ -392,26 +335,26 @@
 							<h1 style="font-family: 'Adobe Caslon Pro';">
 								Sign-up for style tips, news and the chance to win <span class="header-price">a naomi straw LG tote!*</span>
 							</h1>
-							<form id=form83 name=form83 class="wufoo topLabel page wuffo-main-form" accept-charset=UTF-8 autocomplete=off enctype="multipart/form-data" method=post novalidate action="https://europe360.wufoo.eu/forms/xiyrme80d0iz43/#public">
+							<form id="signup" name=form83 class="wufoo topLabel page wuffo-main-form" accept-charset=UTF-8 autocomplete=off enctype="multipart/form-data" method=post novalidate=novalidate action="https://europe360.wufoo.eu/forms/xfo4fon1sv6aet/#public">
 								<table class="wufoo-main-form">
 									<tr>
 										<td class="bottom-pad">
-											<input type="text" id="Field1" name="fname" placeholder="FIRST NAME*" spellcheck=false class="field text large" value="" maxlength=255 tabindex=2 />
+											<input type="text" id="Field1" name="fname" placeholder="FIRST NAME*" spellcheck=false class="field text large" value="" maxlength=255 tabindex=2 required/>
 										</td>
 									</tr>
 									<tr>
 										<td class="bottom-pad">
-											<input id="Field2" name="lname" type="text" spellcheck=false  placeholder="LAST NAME*" class="field text large"value="" maxlength=255 tabindex=2 />
+											<input id="Field2" name="lname" type="text" spellcheck=false  placeholder="LAST NAME*" class="field text large"value="" maxlength=255 tabindex=2 required/>
 										</td>
 									</tr>
 									<tr>
 										<td class="bottom-pad">
-											<input id="Field3" name="email" type="email" spellcheck=false placeholder="EMAIL*" class="field text large"value="" maxlength=255 tabindex=2 />
+											<input id="Field3" name="email" type="email" spellcheck=false placeholder="EMAIL*" class="field text large"value="" maxlength=255 tabindex=2 required/>
 										</td>
 									</tr>
 									<tr>
 										<td class="bottom-pad">
-											<input id="Field4" name="number" type="text" placeholder="MOBILE*" spellcheck=false class="field text large"value="" maxlength=255 tabindex=2 />
+											<input id="Field4" name="number" type="text" placeholder="MOBILE*" spellcheck=false class="field text large"value="" maxlength=255 tabindex=2 required/>
 										</td>
 									</tr>
 									<tr>
@@ -420,7 +363,7 @@
 									<tr>
 										<td class="bottom-pad datepicker-outer-wrappper clearfix">
 											<div class="datepicker-wrapper day">
-												<select name="date" class="width-30" id="Field5">
+												<select name="date" class="width-30" id="Field5" required>
 													<option value="" disabled selected>DAY</option>
 													<option value="01">01</option>
 													<option value="02">02</option>
@@ -456,7 +399,7 @@
 												</select>
 											</div>
 											<div class="datepicker-wrapper month">
-												<select name="month" class="width-30" id="Field6">
+												<select name="month" class="width-30" id="Field6" required>
 													<option value="" disabled selected>MONTH</option>
 													<option value="01">January</option>
 													<option value="02">February</option>
@@ -473,7 +416,7 @@
 												</select>
 											</div>
 											<div class="datepicker-wrapper year">
-												<select class="width-30" name="year" id="Field7">
+												<select class="width-30" name="year" id="Field7" required>
 													<option value="" disabled selected>YEAR</option>
 												</select>
 											</div>
@@ -507,7 +450,7 @@
 									</tr>
 									<tr>
 										<td>
-											<input id=saveForm name=saveForm class="btImg submit" type=image src="images/submit-btn.png" />
+											<input id="saveForm" name="saveForm" class="btImg submit" type=image src="images/submit-btn.png" />
 										</td>
 									</tr>
 									<tr>
@@ -525,6 +468,57 @@
 									<input type=hidden id=idstamp name=idstamp value="Tvq9YOO7RtV4uXx8uAmmr1cGNEqKZAUU/C/V+ST5Eig="/>
 								</div>
 							</form>
+							<script type="text/javascript">
+								$(document).ready(function(){
+									//validate age
+									$.validator.addMethod("check_date_of_birth", function(value, element) {
+										var day = $("#Field5").val();
+										var month = $("#Field6").val();
+										var year = $("#Field7").val();
+										var age =  18;
+										//get current date -1 
+										var mydate = new Date();
+										mydate.setFullYear(year, month-1, day-1);
+
+										var currdate = new Date();
+										currdate.setFullYear(currdate.getFullYear() - age);
+										
+										return currdate > mydate;
+
+									}, "You must be at least 18 years of age.");
+
+									$("#signup").validate({
+										rules: {
+							        		fname: "required",
+							        		lname: "required",
+							        		email: {
+							        			required: true,
+							        			email: true
+							        		},
+							        		number: "required",
+							        		date: "required",
+							        		month: "required",
+							        		year: { check_date_of_birth: true }
+								        },
+								        messsages: {
+								        	fname: "Please enter first name",
+								        	lname: "Please enter last name",
+								        	email: "Please enter email",
+								        	mobile: "Please enter mobile",
+								        	date: "Please enter date",
+								        	month: "Please enter month",
+								        	year: "Please enter year"
+								        },
+							        	submitHandler: function(form) {
+								            $('.popup.loading').show();
+								            document.getElementById('saveForm').disabled = true;
+								            alert("submit! use link below to go to the other step");
+								            form.submit();
+								        },
+								     	debug: true
+									});
+								});
+							</script>
 						</div>
 					</div>
 				</div>

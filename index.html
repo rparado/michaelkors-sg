@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Michael Kors Singapore</title>
+		<meta name=description content="Michael Kors Indonesia new season with new style. Spring is finally here from rich nutrals to hints of gold to bold garden-party-ready accessories"/>
+		<meta name=keyword content="Michael Kors, Michael Kors Thailand"/>
+		<meta charset=utf-8>
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href=favicon.png>
+		<meta name=mobile-web-app-capable content=yes>
+		<meta name=apple-mobile-web-app-capable content=yes>
+		<meta name=apple-mobile-web-app-status-bar-style content=black>
+		<link rel=icon sizes=196x196 href=mobile-icon.png>
+		<link rel=icon sizes=128x128 href=mobile-icon.png>
+		<link rel=apple-touch-icon-precomposed sizes=128x128 href=mobile-icon.png>
+		<link rel=stylesheet href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="css/normalize.css" rel=stylesheet>
+		<link href="css/ouibounce.css" rel=stylesheet>
+		<link href="css/style.css" rel=stylesheet>
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script src="script/jquery-1.11.1.min.js"></script>
+		<script src="script/validation/jquery.validate.min.js"></script>
+		<script src="script/validation/additional-methods.min.js"></script>
+		<script src="script/cufon-yui.js"></script>
+		<script src="script/Gotham_Book_325-Gotham_Rounded_Medium_350.font.js"></script>
+		<script src="script/Adobe_Caslon_Pro_italic_400.font.js"></script>
+		<script src="script/Caslon-Light_400.font.js"></script>
+		<script src="script/bioep.js" type="text/javascript"></script>
+		<script src="script/jquery.cookie.js" type="text/javascript"></script>
+		<!-- <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+			<script type="text/javascript" src="script/jquery.fancybox.pack.js"></script> -->
+		<script>
+			$(document).ready(function(){
+			    $('#menu ul li a').on('click', function(event) {
+			        var target = $(this).attr('href').replace('#', '');
+			        $('html, body').animate({
+			            scrollTop: $('a[name=' + target + ']').offset().top
+			        }, 1000);
+			        event.preventDefault();
+			    });
+			    $('.popup_open_tnc').bind('click', function() {
+			        $('.popup_tnc').show();
+			    });
+			    $('.popup_tnc .popup_close').bind('click', function() {
+			        $('.popup_tnc').hide();
+			    });
+			    $('.popup_open_privacy').bind('click', function() {
+			        $('.popup_privacy').show();
+			    });
+			    $('.popup_privacy .popup_close').bind('click', function() {
+			        $('.popup_privacy').hide();
+			    });
+			    $('.address').bind('click', function() {
+			        $('.address_div').css({
+			            'position': 'absolute',
+			            'z-index': '1'
+			        });
+			        var id = $(this).attr('id');
+			        $('.address_div.' + id).css({
+			            'position': 'fixed',
+			            'z-index': '3'
+			        });
+			    });
+			    $('.address_div .close').bind('click', function() {
+			        var id = $(this).attr('id');
+			        $('.address_div.' + id).css({
+			            'position': 'absolute',
+			            'z-index': '1'
+			        });
+			    });
+
+			    //load year
+				var start = 1900,
+			   	end = new Date().getFullYear(),
+			    select = document.getElementById('Field7');
+			    
+				for (var year = start ; year <=end; year++){
+				    var opt = document.createElement('option');
+				    opt.value = year;
+				    opt.innerHTML = year;
+				    select.appendChild(opt);
+				}
+			});
+			$(window).load(function() {});
+			$(window).scroll(function() {});
+			Cufon.replace('#home p', {
+			    fontFamily: 'Gotham Book'
+			});
+			Cufon.replace('#menu a', {
+			    fontFamily: 'Gotham Book'
+			});
+			Cufon.replace('.product-title span', {
+			    fontFamily: 'Gotham Book'
+			});
+			Cufon.replace('#product p', {
+			    fontFamily: 'Gotham Book'
+			});
+			Cufon.replace('#product strong', {
+			    fontFamily: 'Gotham Rounded Medium'
+			});
+			Cufon.replace('#product span', {
+			    fontFamily: 'Gotham Book'
+			});
+			Cufon.replace('#email_box p', {
+			    fontFamily: 'Gotham Book'
+			});
+			Cufon.replace('.address', {
+			    fontFamily: 'Gotham Book'
+			});
+			Cufon.replace('.address_div a', {
+			    fontFamily: 'Gotham Book'
+			});
+			Cufon.replace('.address_div p', {
+			    fontFamily: 'Gotham Book'
+			});
+			Cufon.replace('.address_div strong', {
+			    fontFamily: 'Gotham Rounded Medium'
+			});
+			Cufon.replace('.tel', {
+			    fontFamily: 'Gotham Book'
+			});
+			Cufon.replace('.desc', {
+			    fontFamily: 'Gotham Book'
+			});
+			Cufon.replace('input[type="email"]', {
+			    fontFamily: 'Gotham Book'
+			});
+			Cufon.replace('h2', {
+			    fontFamily: 'Caslon-Light'
+			});
+			Cufon.replace('#mkmusthave h1', {
+			    fontFamily: 'Caslon-Light'
+			});
+			/*Cufon.replace('.signup-form-pad h1', {
+			    fontFamily: 'Adobe Caslon Pro'
+			});*/
+			Cufon.replace('#mkmusthave p', {
+			    fontFamily: 'Gotham Book'
+			});
+			 $("#form83").validate({
+		        rules: {
+		            Field1: {
+		                required: true
+		            },
+		            Field2: {
+		                required: true
+		            },
+		            Field3: {
+		                required: true,
+		                email: true
+		            },
+		            Field4: {
+		                required: true
+		            },
+		            Field5: {
+		                required: true
+		            },
+		            Field6: {
+		                required: true
+		            },
+		            Field7: {
+		                required: true
+		            }
+		        },
+		        messages: {
+		            Field1: {
+		                required: "Please enter first name."
+		            },
+		            Field2: {
+		                required: "Please enter last name."
+		            },
+		            Field3: {
+		                required: "Please enter email address.",
+		                email: "Please enter valid email address."
+		            },
+		            Field4: {
+		                required: "Please enter mobile number."
+		            },
+		            Field5: {
+		                required: "Please enter day."
+		            },
+		            Field6: {
+		                required: "Please enter month."
+		            },
+		            Field7: {
+		                required: "Please enter year."
+		            }
+		        },
+		        submitHandler: function(form) {
+		            $('.popup.loading').show();
+		            document.getElementById('saveForm').disabled = true;
+		            form.submit();
+		        }
+		    });
+
+		   
+		</script>
+		<script type="text/javascript">
+			bioEp.init({
+			  html: '<div class="fancybox" id="popup_box">'+
+			'<div class="fancybox-title">'+
+			'<h1 >SIGN UP FOR STYLE TIPS</h1>'+
+			'<p >SIGN UP AND GET A STYLE TIP FROM <br />MICHAEL KORS FOR THIS SEASON</p>'+
+			'</div>'+
+			
+			'<div class="fancybox-body">'+
+			'<form id=form83 name=form83 class="wufoo topLabel page" accept-charset=UTF-8 autocomplete=off enctype="multipart/form-data" method=post novalidate action="https://europe360.wufoo.eu/forms/xiyrme80d0iz43/#public">'+
+			'<table class="oui-form-poup">'+
+			'<tr>'+
+			'<td>'+
+			'<input id=Field8 name=Field8 type="text" spellcheck=false class="field text large" placeholder=NAME value="" maxlength=255 tabindex=2 />'+
+			'</td>'+
+			'</tr>'+
+			'<tr>'+
+			'<td>'+
+			'<input id=Field1 name=Field1 type=email spellcheck=false class="field text large" placeholder="EMAIL ADDRESS" value="" maxlength=255 tabindex=2 />'+
+			'</td>'+
+			'</tr>'+
+			'<tr>'+
+			'<td class="td-input-submit">'+
+			'<input id=saveForm name=saveForm class="btImg submit" type=image src="images/submit-btn.png" alt=Submit />'+
+			'</td>'+
+			'</tr>'+
+			'</table>'+
+			'<div class=hide>'+
+			'<label for=comment>Do Not Fill This Out</label>'+
+			'<textarea name=comment id=comment rows=1 cols=1></textarea>'+
+			'<input type=hidden id=idstamp name=idstamp value="Tvq9YOO7RtV4uXx8uAmmr1cGNEqKZAUU/C/V+ST5Eig="/>'+
+			'</div>'+
+			'</form>'+
+			
+			'</div>'+
+			'</div>',
+			  css: '#popup_box h1 {font-family:"Adobe Caslon Pro";font-weight:400;text-align: center; color:#333;}'+
+			  	'#popup_box p {font-family:"Adobe Caslon Pro"; text-align: center; color: #333;}',
+			cookieExp: 0
+			});
+			
+		</script>
+		<!--[if lt IE 10]>
+		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<style>.stButton .facebook{background:url(images/facebook1.jpg) no-repeat;}
+			.stButton .twitter{background:url(images/twitter.jpg) no-repeat;}
+			.stButton .pinterest{background:url(images/pint.jpg) no-repeat;}
+			.stButton .googleplus{background:url(images/g_plus.jpg) no-repeat;width:21px;}
+			.stButton .tumblr{background:url(images/t.jpg) no-repeat;}
+		</style>
+	</head>
+	<body id=public>
+		<div id=container class=ltr>
+			<div id=header_height></div>
+			<div id=logo_fixed>
+				<img src="images/mk_minilogo.png" alt="michael kors"/>
+			</div>
+			<div id=menu>
+				<ul>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#summer-collection">ENDLESS SUNDAY</a></li>
+					<li><a href="#sign-up">SIGN UP</a></li>
+					<li><a href="#stores">STORES</a></li>
+				</ul>
+			</div>
+			<a name=home></a>
+			<div id=home>
+				<iframe width=960 height=540 src="https://www.youtube.com/embed/Vjh04k66l8c?vq=hd720&rel=0&autoplay=0&amp;showinfo=0" frameborder=0 allowfullscreen></iframe>
+				<img style="padding-top:60px;" src="images/MK_Indonesia_EndlessSunday_090316_03.jpg" alt="denim for days"/>
+				<p style="color:#000;font-size:15px;margin-left:50px; margin-right:50px;">SPRING&#39;S BREEZY MUST-HAVES ARE ALL ABOUT RELAXED POLISH. LAID-BACK YET CHIC, EYELET LACE, SCALLOPED TRIMS AND FEMININE SILHOUETTES ARE AT THE TOP OF OUR WISH LIST. </p>
+				<br>
+				<div class=wrapper>
+					<div class=a>
+						<div class=image><img src="images/MK_EndlessSundayjpg_07.jpg" alt="daisy loafer"/></div>
+						<div class=image><img src="images/MK_EndlessSundayjpg_12.jpg" alt="darci watch"/></div>
+					</div>
+					<div class=b>
+						<div class=image><img src="images/MK_EndlessSundayjpg_09.jpg" alt="greenwich large satchel"/></div>
+					</div>
+				</div>
+				<div class=clear></div>
+			</div>
+			<hr/>
+			<div id=mkmusthave>
+				<h1>MICHAEL&#39;S<br>
+					MUST-HAVES
+				</h1>
+				<p style="font-size:14px; text-align: center; margin-top: 20px;color:#000;">MICHAEL KORS SHOWS US HOW TO STEP INTO THE SEASON WITH LACE-UP ESPADRILLES, <br>
+					LIGHT-AS-AIR SLIP-ONS AND MORE.<br>
+				</p>
+			</div>
+			<a name=summer-collection></a>
+			<div id=product>
+				<div class=clear> </div>
+				<script src="http://w.sharethis.com/button/buttons.js"></script>
+				<script>stLight.options({publisher:"1d96a373-b40c-4be1-bf3b-075f4b14a676",doNotHash:false,doNotCopy:false,hashAddressBar:true});</script>
+				<div class=item>
+					<div class=image><img src="images/MAXWELL-MID-WEDGE.jpg" alt="MAXWELL MID WEDGE"/></div>
+					<div class=solial_img>
+						<span class=st_facebook st_url="http://valiram.com/product/maxwell-mid-wedge/" st_title="MAXWELL MID WEDGE" st_image='http://www.valiram.com/michaelkors-indonesia/images/MAXWELL-MID-WEDGE.jpg' displaytext=''></span>
+						<span class=st_twitter st_title="MAXWELL MID WEDGE" st_url="http://valiram.com/product/maxwell-mid-wedge/" st_image='http://www.valiram.com/michaelkors-indonesia/images/MAXWELL-MID-WEDGE.jpg' displaytext=''></span>
+						<span class=st_pinterest st_title="MAXWELL MID WEDGE" st_url="http://valiram.com/product/maxwell-mid-wedge/" st_image='http://www.valiram.com/michaelkors-indonesia/images/MAXWELL-MID-WEDGE.jpg' displaytext=''></span>
+						<span class=st_googleplus st_title="MAXWELL MID WEDGE" st_url="http://valiram.com/product/maxwell-mid-wedge/" st_image='http://www.valiram.com/michaelkors-indonesia/images/MAXWELL-MID-WEDGE.jpg' displaytext=''></span>
+						<span class=st_tumblr st_title="MAXWELL MID WEDGE" st_url="http://valiram.com/product/maxwell-mid-wedge/" st_image='http://www.valiram.com/michaelkors-indonesia/images/MAXWELL-MID-WEDGE.jpg' displaytext=''></span>
+					</div>
+					<div class=name>
+						<a href="http://valiram.com/product/maxwell-mid-wedge/"><strong>MAXWELL MID WEDGE</strong>
+						<span style="margin-top:-20px;"><br>
+						40S6MXMA3D</span></a>
+					</div>
+				</div>
+				<div class=item>
+					<div class=image><img src="images/NAOMI-STRAW-LG-TOTE.jpg" alt="greenwich large satchel"/></div>
+					<div class=solial_img>
+						<span class=st_facebook st_title="Naomi Straw LG Tote" st_url="http://valiram.com/product/naomi-straw-lg-tote/" st_image='http://valiram.com/wp-content/uploads/2016/03/30S6GS2T3W-085_1.jpg' displaytext=''></span>
+						<span class=st_twitter st_title="Naomi Straw LG Tote" st_url="http://valiram.com/product/naomi-straw-lg-tote/" st_image='http://valiram.com/wp-content/uploads/2016/03/30S6GS2T3W-085_1.jpg' displaytext=''> </span>
+						<span class=st_pinterest st_title="Naomi Straw LG Tote" st_url="http://valiram.com/product/naomi-straw-lg-tote/" st_image='http://valiram.com/wp-content/uploads/2016/03/30S6GS2T3W-085_1.jpg' displaytext=''></span>
+						<span class=st_googleplus st_title="Naomi Straw LG Tote" st_url="http://valiram.com/product/naomi-straw-lg-tote/" st_image='http://valiram.com/wp-content/uploads/2016/03/30S6GS2T3W-085_1.jpg' displaytext=''> </span>
+						<span class=st_tumblr st_title="Naomi Straw LG Tote" st_url="http://valiram.com/product/naomi-straw-lg-tote/" st_image='http://valiram.com/wp-content/uploads/2016/03/30S6GS2T3W-085_1.jpg' displaytext=''></span>
+					</div>
+					<div class=name>
+						<a href="http://valiram.com/product/naomi-straw-lg-tote/"><strong>NAOMI STRAW LG TOTE</strong>
+						<span style="margin-top:-20px;"><br>
+						30S6GS2T3W</span></a>
+					</div>
+				</div>
+				<div class=item>
+					<div class=image><img src="images/WHITE-SCALOPPED-EYELET-CROP-TOP.jpg" alt="darci watch"/></div>
+					<div class=solial_img>
+						<span class=st_facebook st_title="White Scalloped Eyelet Crop Top" st_url="http://valiram.com/product/white-scalloped-eyelet-crop-top/" st_image='http://valiram.com/wp-content/uploads/2016/03/MS64KTV49Y-100_1.jpg' displaytext=''></span>
+						<span class=st_twitter st_title="White Scalloped Eyelet Crop Top" st_url="http://valiram.com/product/white-scalloped-eyelet-crop-top/" st_image='http://valiram.com/wp-content/uploads/2016/03/MS64KTV49Y-100_1.jpg' displaytext=''> </span>
+						<span class=st_pinterest st_title="White Scalloped Eyelet Crop Top" st_url="http://valiram.com/product/white-scalloped-eyelet-crop-top/" st_image='http://valiram.com/wp-content/uploads/2016/03/MS64KTV49Y-100_1.jpg' displaytext=''></span>
+						<span class=st_googleplus st_title="White Scalloped Eyelet Crop Top" st_url="http://valiram.com/product/white-scalloped-eyelet-crop-top/" st_image='http://valiram.com/wp-content/uploads/2016/03/MS64KTV49Y-100_1.jpg' displaytext=''> </span>
+						<span class=st_tumblr st_title="White Scalloped Eyelet Crop Top" st_url="http://valiram.com/product/white-scalloped-eyelet-crop-top/" st_image='http://valiram.com/wp-content/uploads/2016/03/MS64KTV49Y-100_1.jpg' displaytext=''></span>
+					</div>
+					<div class=name>
+						<a href="http://valiram.com/product/white-scalloped-eyelet-crop-top/"><strong>WHITE SCALLOPED EYELET CROP TOP</strong>
+						<span style="margin-top:-20px;"><br>
+						MS64KTV49Y</span></a>
+					</div>
+					<div class=name>
+						<a href="http://valiram.com/product/white-scalopped-eyelet-skirt/"><strong style="margin-top:10px;">WHITE SCALOPPED EYELET SKIRT</strong>
+						<span style="margin-top:-20px;"><br>
+						MS67EGG49Y</span></a>
+					</div>
+				</div>
+				<div class=clear></div>
+				<div class=item>
+					<div class=image><img src="images/DELRAY.jpg" alt="taormina sunglasses"/></div>
+					<div class=solial_img>
+						<span class=st_facebook st_title=Delray st_url="http://valiram.com/product/delray/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S5GTVE9L-097_1.jpg' displaytext=''></span>
+						<span class=st_twitter st_title=Delray st_url="http://valiram.com/product/delray/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S5GTVE9L-097_1.jpg' displaytext=''> </span>
+						<span class=st_pinterest st_title=Delray st_url="http://valiram.com/product/delray/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S5GTVE9L-097_1.jpg' displaytext=''></span>
+						<span class=st_googleplus st_title=Delray st_url="http://valiram.com/product/delray/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S5GTVE9L-097_1.jpg' displaytext=''> </span>
+						<span class=st_tumblr st_title=Delray st_url="http://valiram.com/product/delray/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S5GTVE9L-097_1.jpg' displaytext=''></span>
+					</div>
+					<div class=name> <a href="http://valiram.com/product/jet-set-travel-continental/"><strong>DELRAY</strong> <span style="margin-top:-20px;"><br>
+						MK4318</span></a> 
+					</div>
+				</div>
+				<div class=item>
+					<div class=image><img src="images/JET-SET-TRAVEL-CONTINENTAL-.jpg" alt="perforated mini dress"/></div>
+					<div class=solial_img>
+						<span class=st_facebook st_title="Jet Set Travel Continental" st_url="http://valiram.com/product/jet-set-travel-continental/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S6GL3F1L-801_1.jpg' displaytext=''></span>
+						<span class=st_twitter st_title="Jet Set Travel Continental" st_url="http://valiram.com/product/jet-set-travel-continental/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S6GL3F1L-801_1.jpg' displaytext=''> </span>
+						<span class=st_pinterest st_title="Jet Set Travel Continental" st_url="http://valiram.com/product/jet-set-travel-continental/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S6GL3F1L-801_1.jpg' displaytext=''></span>
+						<span class=st_googleplus st_title="Jet Set Travel Continental" st_url="http://valiram.com/product/jet-set-travel-continental/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S6GL3F1L-801_1.jpg' displaytext=''> </span>
+						<span class=st_tumblr st_title="Jet Set Travel Continental" st_url="http://valiram.com/product/jet-set-travel-continental/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S6GL3F1L-801_1.jpg' displaytext=''></span>
+					</div>
+					<div class=name> <a href="http://valiram.com/product/liane-sm-billfold/"><strong>JET SET TRAVEL CONTINENTAL</strong> <span style="margin-top:-20px;"><br>
+						32S5GTVE9L</span></a> 
+					</div>
+				</div>
+				<div class=item>
+					<div class=image><img src="images/LIANE-SM-BILLFOLD.jpg" alt="open arrow cuff"/></div>
+					<div class=solial_img>
+						<span class=st_facebook st_title="Liane SM Billfold" st_url="http://valiram.com/product/liane-sm-billfold/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S6GL3F1L-801_1.jpg' displaytext=''></span>
+						<span class=st_twitter st_title="Liane SM Billfold" st_url="http://valiram.com/product/liane-sm-billfold/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S6GL3F1L-801_1.jpg' displaytext=''> </span>
+						<span class=st_pinterest st_title="Liane SM Billfold" st_url="http://valiram.com/product/liane-sm-billfold/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S6GL3F1L-801_1.jpg' displaytext=''></span>
+						<span class=st_googleplus st_title="Liane SM Billfold" st_url="http://valiram.com/product/liane-sm-billfold/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S6GL3F1L-801_1.jpg' displaytext=''> </span>
+						<span class=st_tumblr st_title="Liane SM Billfold" st_url="http://valiram.com/product/liane-sm-billfold/" st_image='http://valiram.com/wp-content/uploads/2016/03/32S6GL3F1L-801_1.jpg' displaytext=''></span>
+					</div>
+					<div class=name> <a href="http://valiram.com/product/delray/"><strong>LIANE SM BILLFOLD</strong> <span style="margin-top:-20px;"><br>
+						32S6GL3F1L</span></a> 
+					</div>
+				</div>
+				<div class=clear></div>
+			</div>
+			<a name=sign-up></a>
+			<div id="signup-form">
+				<div class="global-width clearfix">
+					<div class="signup-form-wrapper">
+						<div class="signup-form-pad">
+							<h1 style="font-family: 'Adobe Caslon Pro';">
+								Sign-up for style tips, news and the chance to win <span class="header-price">a naomi straw LG tote!*</span>
+							</h1>
+							<form id=form83 name=form83 class="wufoo topLabel page wuffo-main-form" accept-charset=UTF-8 autocomplete=off enctype="multipart/form-data" method=post novalidate action="https://europe360.wufoo.eu/forms/xiyrme80d0iz43/#public">
+								<table class="wufoo-main-form">
+									<tr>
+										<td class="bottom-pad">
+											<input type="text" id="Field1" name="fname" placeholder="FIRST NAME*" spellcheck=false class="field text large" value="" maxlength=255 tabindex=2 />
+										</td>
+									</tr>
+									<tr>
+										<td class="bottom-pad">
+											<input id="Field2" name="lname" type="text" spellcheck=false  placeholder="LAST NAME*" class="field text large"value="" maxlength=255 tabindex=2 />
+										</td>
+									</tr>
+									<tr>
+										<td class="bottom-pad">
+											<input id="Field3" name="email" type="email" spellcheck=false placeholder="EMAIL*" class="field text large"value="" maxlength=255 tabindex=2 />
+										</td>
+									</tr>
+									<tr>
+										<td class="bottom-pad">
+											<input id="Field4" name="number" type="text" placeholder="MOBILE*" spellcheck=false class="field text large"value="" maxlength=255 tabindex=2 />
+										</td>
+									</tr>
+									<tr>
+										<td class="bday-label">BIRTHDAY*</td>
+									</tr>
+									<tr>
+										<td class="bottom-pad datepicker-outer-wrappper clearfix">
+											<div class="datepicker-wrapper day">
+												<select name="date" class="width-30" id="Field5">
+													<option value="" disabled selected>DAY</option>
+													<option value="01">01</option>
+													<option value="02">02</option>
+													<option value="03">03</option>
+													<option value="04">04</option>
+													<option value="05">05</option>
+													<option value="06">06</option>
+													<option value="07">07</option>
+													<option value="08">08</option>
+													<option value="09">09</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+													<option value="14">14</option>
+													<option value="15">15</option>
+													<option value="16">16</option>
+													<option value="17">17</option>
+													<option value="18">18</option>
+													<option value="19">19</option>
+													<option value="20">20</option>
+													<option value="21">21</option>
+													<option value="22">22</option>
+													<option value="23">23</option>
+													<option value="24">24</option>
+													<option value="25">25</option>
+													<option value="26">26</option>
+													<option value="27">27</option>
+													<option value="28">28</option>
+													<option value="29">29</option>
+													<option value="30">30</option>
+													<option value="31">31</option>
+												</select>
+											</div>
+											<div class="datepicker-wrapper month">
+												<select name="month" class="width-30" id="Field6">
+													<option value="" disabled selected>MONTH</option>
+													<option value="01">January</option>
+													<option value="02">February</option>
+													<option value="03">March</option>
+													<option value="04">April</option>
+													<option value="05">May</option>
+													<option value="06">June</option>
+													<option value="07">July</option>
+													<option value="08">August</option>
+													<option value="09">September</option>
+													<option value="10">October</option>
+													<option value="11">November</option>
+													<option value="12">December</option>
+												</select>
+											</div>
+											<div class="datepicker-wrapper year">
+												<select class="width-30" name="year" id="Field7">
+													<option value="" disabled selected>YEAR</option>
+												</select>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+									</tr>
+									<tr>
+										<td>ARE YOU A SINGAPORE RESIDENT?</td>
+									</tr>
+									<tr>
+										<td class="clearfix">
+											<div class="radio-option-wrapper">
+												<div class="option-wrapper">
+													<input class="option-button" type="radio" name="option" value="yes"  checked/><span class="radio-option">YES</span>
+												</div>
+												
+												<div class="option-wrapper">
+													<input class="option-button" type="radio" name="option" value="no" /><span class="radio-option">NO</span>
+												</div>
+												
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+									</tr>
+									<tr>
+										<td>
+											<input id=saveForm name=saveForm class="btImg submit" type=image src="images/submit-btn.png" />
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="terms-field">
+											*Required fields. Open to residents of singapore, 18 years or older. Sweepstakes ends 1 May 2016. Only completed entries qualify. Terms and condition apply.
+										</td>
+									</tr>
+								</table>
+								<div class=hide>
+									<label for=comment>Do Not Fill This Out</label>
+									<textarea name=comment id=comment rows=1 cols=1></textarea>
+									<input type=hidden id=idstamp name=idstamp value="Tvq9YOO7RtV4uXx8uAmmr1cGNEqKZAUU/C/V+ST5Eig="/>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<a name=stores></a>
+			<div id=store_box>
+				<h2>STORES</h2>
+				<div class="store store_scotts_sq">
+					<div> 
+						<a class=address id="scotts_sq" href="javascript:void(0);">6 Scotts Road, 01-16/17 Scotts Square, 228209 Singapore</a>
+					</div>
+				</div>
+				
+				<div class="store store_takashimaya">
+					<div> 
+						<a class=address id="takashimaya" href="javascript:void(0);">Level 1 Takashimaya Department Store, 391 Orchard Road, Singapore, Singapore 238873</a>
+					</div>
+				</div>
+
+				<div class="store store_vivocity">
+					<div> 
+						<a class=address id="vivocity" href="javascript:void(0);">1 Harbourfront Walk, 01-21 VivoCity, 098585 Singapore</a>
+					</div>
+				</div>
+				
+				<div class="store store_rws">
+					<div> 
+						<a class=address id="rws" href="javascript:void(0);">8 Sentosa Gateway, 02-129 Luxury Fashion Galleria, Singapore 098269</a>
+					</div>
+				</div>
+				
+				<div class="store store_mbs">
+					<div> 
+						<a class=address id="mbs" href="javascript:void(0);">10 Bayfront Avenue, B2-21/22 Marina Bay Sands, 018956 Singapore</a>
+					</div>
+				</div>
+				
+				<div class="store store_mks">
+					<div> 
+						<a class=address id="mks" href="javascript:void(0);">60 Airport Boulevard, 026-084 Changi Airport Terminal 2 Departures, Singapore 819643</a>
+					</div>
+				</div>
+				
+				<div class="store store_tdeparture">
+					<div> 
+						<a class=address id="tdeparture" href="javascript:void(0);">60 Airport Boulevard, 02-06 Changi Airport Terminal 3, 819643 Singapore</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id=footer>
+			<div>
+				<div id=footer_left></div>
+				<div id=footer_right>
+					<a href="javascript:void(0);" class=popup_open_tnc>Terms &amp; Conditions</a> &nbsp;| &nbsp;
+					<a href="javascript:void(0);" class=popup_open_privacy>Privacy Policy</a>
+				</div>
+				<div class=clear></div>
+			</div>
+		</div>
+		<div class="popup loading">
+			<div class=popup_loading>
+				<div>
+					<img src="images/ajax-loader.gif"/>
+					<h1>Saving... Please wait.</h1>
+				</div>
+			</div>
+			<div class=popup_bg></div>
+		</div>
+		<div class="popup popup_tnc">
+			<div class=popup_box>
+				<div>
+					<h1>TERMS &amp; CONDITIONS</h1>
+					<p>In using this website you are deemed to have read and agreed to the following terms and conditions:</p>
+					<p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and any or all Agreements: “Client”, “You” and “Your” refers to you, the person accessing this website and accepting the Company’s terms and conditions. “The Company”, “Ourselves”, “We” and “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves, or either the Client or ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner, whether by formal meetings of a fixed duration, or any other means, for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services/products, in accordance with and subject to, prevailing English Law. Any use of the above terminology or other words in the singular, plural, capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
+					<p><strong>Privacy Statement</strong></p>
+					<p>We are committed to protecting your privacy. Authorized employees within the company on a need to know basis only use any information collected from individual customers. We constantly review our systems and data to ensure the best possible service to our customers.</p>
+					<p><strong>Confidentiality</strong></p>
+					<p>We are registered under the Personal Data Protection Act 2010 and as such, any information concerning the Client and their respective Client Records may be passed to third parties. However, Client records are regarded as confidential and therefore will not be divulged to any third party, other than brand principals if legally required to do so to the appropriate authorities. Clients have the right to request sight of, and copies of any and all Client Records we keep, on the proviso that we are given reasonable notice of such a request. Clients are requested to retain copies of any literature issued in relation to the provision of our services. Where appropriate, we shall issue Client’s with appropriate written information, handouts or copies of records as part of an agreed contract, for the benefit of both parties.</p>
+					<p>We will not sell, share, or rent your personal information to any third party or use your e-mail address for unsolicited mail. Any emails sent by this Company will only be in connection with the provision of agreed services and products.</p>
+					<p><strong>Disclaimer</strong></p>
+					<p>Exclusions and Limitations</p>
+					<p>The information on this web site is provided on an “as is” basis. To the fullest extent permitted by law, this Company:</p>
+					<ul>
+						<li>excludes all representations and warranties relating to this website and its contents or which is or may be provided by any affiliates or any other third party, including in relation to any inaccuracies or omissions in this website and/or the Company’s literature; and</li>
+						<li>excludes all liability for damages arising out of or in connection with your use of this website. This includes, without limitation, direct loss, loss of business or profits (whether or not the loss of such profits was foreseeable, arose in the normal course of things or you have advised this Company of the possibility of such potential loss), damage caused to your computer, computer software, systems and programs and the data thereon or any other direct or indirect, consequential and incidental damages.</li>
+					</ul>
+					<p>This Company does not however exclude liability for death or personal injury caused by its negligence. The above exclusions and limitations apply only to the extent permitted by law. None of your statutory rights as a consumer are affected.</p>
+					<p><strong>Termination of Agreements and Refunds Policy</strong></p>
+					<p>Both the Client and ourselves have the right to terminate any Services Agreement for any reason, including the ending of services that are already underway. No refunds shall be offered, where a Service is deemed to have begun and is, for all intents and purposes, underway. Any monies that have been paid to us which constitute payment in respect of the provision of unused Services, shall be refunded.</p>
+					<p><strong>Availability</strong></p>
+					<p>Unless otherwise stated, the services featured on this website are only available within a select country. All advertising is intended solely for the select countries. You are solely responsible for evaluating the fitness for a particular purpose of any downloads, programs and text available through this site. Redistribution or republication of any part of this site or its content is prohibited, including such by framing or other similar or any other means, without the express written consent of the Company. The Company does not warrant that the service from this site will be uninterrupted, timely or error free, although it is provided to the best ability. By using this service you thereby indemnify this Company, its employees, agents and affiliates against any loss or damage, in whatever manner, howsoever caused.</p>
+					<p><strong>Log Files</strong></p>
+					<p>We use IP addresses to analyse trends, administer the site, track user’s movement, and gather broad demographic information for aggregate use. IP addresses are not linked to personally identifiable information. Additionally, for systems administration, detecting usage patterns and troubleshooting purposes, our web servers automatically log standard access information including browser type, access times/open mail, URL requested, and referral URL. This information is not shared with third parties and is used only within this Company on a need-to-know basis. Any individually identifiable information related to this data will never be used in any way different to that stated above without your explicit permission.</p>
+					<p><strong>Cookies</strong></p>
+					<p>Like most interactive web sites this Company’s website [or ISP] uses cookies to enable us to retrieve user details for each visit. Cookies are used in some areas of our site to enable the functionality of this area and ease of use for those people visiting. Some of our affiliate partners may also use cookies.</p>
+					<p><strong>Links to this website</strong></p>
+					<p>You may not create a link to any page of this website without our prior written consent. If you do create a link to a page of this website you do so at your own risk and the exclusions and limitations set out above will apply to your use of this website by linking to it.</p>
+					<p><strong>Links from this website</strong></p>
+					<p>We do not monitor or review the content of other party’s websites which are linked to from this website. Opinions expressed or material appearing on such websites are not necessarily shared or endorsed by us and should not be regarded as the publisher of such opinions or material. Please be aware that we are not responsible for the privacy practices, or content, of these sites. We encourage our users to be aware when they leave our site &amp; to read the privacy statements of these sites. You should evaluate the security and trustworthiness of any other site connected to this site or accessed through this site yourself, before disclosing any personal information to them. This Company will not accept any responsibility for any loss or damage in whatever manner, howsoever caused, resulting from your disclosure to third parties of personal information.</p>
+					<p><strong>Copyright Notice</strong></p>
+					<p>Copyright and other relevant intellectual property rights exists on all text relating to the Company’s services and the full content of this website.</p>
+					<p>This Company’s logo is a registered trademark of this Company in the Malaysia and other countries. The brand names and specific services of this Company featured on this web site are trade marked.</p>
+					<p><strong>Communication</strong></p>
+					<p>We have several different e-mail addresses for different queries. These, &amp; other contact information, can be found on our Contact Us link on our website or via Company literature or via the Company’s stated telephone, facsimile or mobile telephone numbers.</p>
+					<p><strong>General</strong></p>
+					<p>By accessing this website and using our services/buying our products you consent to these terms and conditions. If any of these terms are deemed invalid or unenforceable for any reason (including, but not limited to the exclusions and limitations set out above), then the invalid or unenforceable provision will be severed from these terms and the remaining terms will continue to apply. Failure of the Company to enforce any of the provisions set out in these Terms and Conditions and any Agreement, or failure to exercise any option to terminate, shall not be construed as waiver of such provisions and shall not affect the validity of these Terms and Conditions or of any Agreement or any part thereof, or the right thereafter to enforce each and every provision. These Terms and Conditions shall not be amended, modified, varied or supplemented except in writing and signed by duly authorised representatives of the Company.</p>
+					<p><strong>Notification of Changes</strong></p>
+					<p>The Company reserves the right to change these conditions from time to time as it sees fit and your continued use of the site will signify your acceptance of any adjustment to these terms. If there are any changes to our privacy policy, we will announce that these changes have been made on our home page and on other key pages on our site. If there are any changes in how we use our site customers’ Personally Identifiable Information, notification by e-mail or postal mail will be made to those affected by this change. Any changes to our privacy policy will be posted on our web site 30 days prior to these changes taking place. You are therefore advised to re-read this statement on a regular basis</p>
+					<p>These terms and conditions form part of the Agreement between the Client and ourselves. Your accessing of this website and/or undertaking of a booking or Agreement indicates your understanding, agreement to and acceptance, of the Disclaimer Notice and the full Terms and Conditions contained herein. Your statutory Consumer Rights are unaffected.</p>
+				</div>
+				<a href="javascript:void(0);" class=popup_close><img src="images/close-icon.png" alt="michael kors"></a>
+			</div>
+			<div class=popup_bg></div>
+		</div>
+		<div class="popup popup_privacy">
+			<div class=popup_box>
+				<div>
+					<h1>PRIVACY POLICY</h1>
+					<p><strong>Last Updated:</strong>18th February 2014</p>
+					<p>At the Valiram Group, we value your privacy and strive to protect your personal information in compliance with governing laws of countries we are operate in.</p>
+					<p>Your data has been collected in accordance with such laws and our privacy policy is applicable for all the brands run by the Valiram Group.</p>
+					<p>Our Privacy Policy has been drafted out to help you understand how The Valiram Group and all the Brands we operate across multiple regions collect, manage and store your Personal Customer Information. We have also included in what circumstances we share your information and what security measures we use to store this data. As an organization, we strive to maintain the highest standards of Data Security and Privacy always adhering to the laws of each Country we operate in.</p>
+					<p>We reserve the right at our sole discretion and depending on how Privacy Laws in each country we operate in change, to modify, update, add to, discontinue, remove or otherwise change any portion of this Privacy Policy, in whole or in part, at any time. When we amend this Privacy Policy, we will revise the “last updated” date located at the top of this Privacy Policy.</p>
+					<p><strong>SECTION 1 – DATA COLLECTION &amp; CONSENT</strong></p>
+					<p>Brands operated under The Valiram Group Portfolio collect Personal Customer Information either through the stores, through our online presence or when customers make purchases. Information collected can include but is not limited to; Name, Contact Details, Demographics and Payment Details if a transaction is being carried out.</p>
+					<p>All our registration points, written or electronic, include an authorization from you to opt-in to our records. We may combine the information we collect online with the information we collect offline.</p>
+					<p>When you provide us with Personal Customer Information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only.</p>
+					<p>If after you opt-in, you change your mind, you may withdraw your consent for us to contact you by contacting <a href="mailto:hello@valiram.com">hello@valiram.com</a></p>
+					<p><strong>SECTION 2- WHAT DO WE USE THE DATA FOR</strong>The information we collect from you may be used for the following purposes:</p>
+					<ol>
+						<li>To fulfill your requests for products and services</li>
+						<li>Keep you updated about your orders</li>
+						<li>Keep you informed about our new stores, products and services</li>
+						<li>Where appropriate for Market Research</li>
+					</ol>
+					<p><strong>SECTION 3 – DISCLOSURE OF INFORMATION</strong></p>
+					<p>Information collected about you may be disclosed in the following events:</p>
+					<ol>
+						<li>If we are required by law to do so</li>
+						<li>Third- party service providers to enable them to perform a business</li>
+						<li>With other marketers, as permitted by law, unless you direct us so. In the event we do this, payment information will never be part of information shared</li>
+					</ol>
+					<p>Content and information that you submit through any of our Social Media channels may appear on any of our sites and we are not responsible for the Privacy Practices of any of these platforms.</p>
+					<p><strong>SECTION 4 – PAYMENT</strong></p>
+					<p>All direct payment gateways we use adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, MasterCard, American Express and Discover.</p>
+					<p>PCI-DSS requirements help ensure the secure handling of credit card information by our store and its service providers.</p>
+					<p><strong>SECTION 5 – THIRD- PARTY SERVICES </strong></p>
+					<p>In order to provide the above services to you, we may share your Personal Customer Information with our subsidiaries and affiliated companies worldwide or third-party service providers who are employed to perform functions such as marketing, payment, fulfillment and delivery of orders. These service providers are subject to confidentiality obligations and may only use the Personal Customer Information to perform the necessary functions and not for other purposes. We are not responsible if any of these third-party services breach these confidentiality obligations.</p>
+					<p><strong>SECTION 6 – SECURITY</strong></p>
+					<p>To protect your Personal Customer Information, we take reasonable precautions and follow industry best practices to make sure it is not inappropriately lost, misused, accessed, disclosed, altered or destroyed.</p>
+					<p>If you provide us with your credit card information, the information is encrypted using secure socket layer technology (SSL) and stored with a AES-256 encryption. Although no method of transmission over the Internet or electronic storage is 100% secure, we follow all PCI-DSS requirements and implement additional generally accepted industry standards.</p>
+					<p><strong>SECTION 7 – COOKIES</strong></p>
+					<p>A cookie is a small text file that is stored on a user’s computer for record-keeping purposes. We use cookies on this website. We do link the information we store in cookies to any personally identifiable information you submit while on our website.</p>
+					<p>We use both session ID cookies and persistent cookies. We use session cookies to make it easier and secure for you to navigate our website. A session ID cookie expires when you close your browser. A persistent cookie remains on your hard drive for an extended period of time. You can remove persistent cookies by following directions provided in your Internet browsers “help” file. Reference for cookies can be found at http://www.cookiecentral.com/</p>
+					<p>We use session cookies to store the secure session and browsing preferences of the user. We set a persistent cookie to store your username and interests so you don’t have to enter it more than once. Persistent cookies also enable us to track and target the interests of our users to enhance the experience on our website.</p>
+					<p>If you reject cookies, you may still use our website, but your ability to use some areas of our website, will be limited. Cookies are used in the shopping bag to enable enhanced security and to ensure there is no URL based spamming.</p>
+					<p>Unless you voluntarily identify yourself (through registration, for example), we will have no way of knowing who you are, even if we assign a cookie to your computer. The only personal information a cookie can contain is information you supply (an example of this is when transact as a guest or add items to shopping bag). A cookie cannot read data off your hard drive.</p>
+					<p>Some of our business partners (e.g., advertisers) set cookies while delivering banners on our website. We have no access to or control over these cookies.</p>
+					<p>This privacy statement covers the use of cookies by our sites only and does not cover the use of cookies by any advertisers.</p>
+					<p>We do use cookies on point of collection pages of email address but we do not use them in emails.</p>
+					<p>Our web servers automatically collect limited information about your computer’s connection to the Internet, including your IP address, when you visit our website. (Your IP address is a number that lets computers attached to the Internet know where to send you data — such as the web pages you view.) Your IP address does not identify you personally. We use this information to deliver our web pages to you upon request, to tailor our website to the interests of our customers, to measure traffic within our website and let advertisers know the geographic locations from where our visitors come.</p>
+					<p>Valiram Group includes links to other websites. Such websites are governed by their respective privacy policies, which are beyond our control. Once you leave our servers (you can know where you are by checking the URL in the location bar on your browser), use of any information you provide is governed by the privacy policy of the operator of the website you are visiting. That policy may differ from ours. If you can’t find the privacy policy of any of these websites via a link from the website’s homepage, you should contact the website directly for more information.</p>
+					<p><strong>SECTION 8 – COLLECTION OF COMPUTER DATA</strong></p>
+					<p>When you visit any of Valiram Groups websites, our company servers will automatically record information that your browser sends whenever you visit a website. This data may include:</p>
+					<ul>
+						<li>Your computer’s IP address</li>
+						<li>Browser type</li>
+						<li>Webpage you were visiting before you came to our site</li>
+						<li>The pages with in our network you visit</li>
+						<li>The time spent on those pages, items and information searched for on our site, access times and dates, and other statistics.</li>
+					</ul>
+					<p>&nbsp;</p>
+					<p><strong>QUESTIONS AND CONTACT INFORMATION</strong></p>
+					<p>If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact us at <a href="mailto:hello@valiram.com">hello@valiram.com</a></p>
+				</div>
+				<a href="javascript:void(0);" class=popup_close><img src="images/close-icon.png" alt="michael kors"></a>
+			</div>
+			<div class=popup_bg></div>
+		</div>
+		<div class="address_div scotts_sq">
+			<a href="javascript:void(0);" id=scotts_sq class=close><img src="images/close-icon.png" alt="michael kors"></a>
+			<p><strong>Scotts Square</strong></p>
+			<p>6 Scotts Road, 01-16/17 Scotts Square, 228209 Singapore</p>
+			<div style="overflow:hidden;height:400px;width:100%;">
+				<div id=gmap_canvas1 style="height:400px;width:100%;"></div>
+			</div>
+			<script>
+				function init_map1() {
+				    var myOptions1 = {
+				        zoom: 15,
+				        center: new google.maps.LatLng(1.305804, 103.832875),
+				        mapTypeId: google.maps.MapTypeId.ROADMAP
+				    };
+				    map1 = new google.maps.Map(document.getElementById("gmap_canvas1"), myOptions1);
+				    marker1 = new google.maps.Marker({
+				        map: map1,
+				        position: new google.maps.LatLng(1.305804, 103.832875),
+				        icon: "images/location-marker.png"
+				    });
+				    infowindow1 = new google.maps.InfoWindow({
+				        content: "<b>6 Scotts Road,</b><br/>01-16/17 Scotts Square,<br />228209 Singapore"
+				    });
+				    google.maps.event.addListener(marker1, "click", function() {
+				        infowindow1.open(map1, marker1);
+				    });
+				}
+				google.maps.event.addDomListener(window, 'load', init_map1);
+			</script>
+		</div>
+
+		<div class="address_div takashimaya">
+			<a href="javascript:void(0);" id=takashimaya class=close><img src="images/close-icon.png" alt="michael kors"></a>
+			<p><strong>Takashimaya</strong></p>
+			<p>Level 1 Takashimaya Department Store, 391 Orchard Road, Singapore, Singapore 238873</p>
+			<div style="overflow:hidden;height:400px;width:100%;">
+				<div id=gmap_canvas2 style="height:400px;width:100%;"></div>
+			</div>
+			<script>
+				function init_map1() {
+				    var myOptions1 = {
+				        zoom: 15,
+				        center: new google.maps.LatLng(1.302553, 103.835285),
+				        mapTypeId: google.maps.MapTypeId.ROADMAP
+				    };
+				    map1 = new google.maps.Map(document.getElementById("gmap_canvas2"), myOptions1);
+				    marker1 = new google.maps.Marker({
+				        map: map1,
+				        position: new google.maps.LatLng(1.302553, 103.835285),
+				        icon: "images/location-marker.png"
+				    });
+				    infowindow1 = new google.maps.InfoWindow({
+				        content: "<b>Level 1 Takashimaya Department Store,</b><br/>391 Orchard Road, <br />Singapore, <br />Singapore 238873"
+				    });
+				    google.maps.event.addListener(marker1, "click", function() {
+				        infowindow1.open(map1, marker1);
+				    });
+				}
+				google.maps.event.addDomListener(window, 'load', init_map1);
+			</script>
+		</div>
+
+		<div class="address_div vivocity">
+			<a href="javascript:void(0);" id=vivocity class=close><img src="images/close-icon.png" alt="michael kors"></a>
+			<p><strong>VivoCity</strong></p>
+			<p>1 Harbourfront Walk, 01-21 VivoCity, 098585 Singapore</p>
+			<div style="overflow:hidden;height:400px;width:100%;">
+				<div id=gmap_canvas3 style="height:400px;width:100%;"></div>
+			</div>
+			<script>
+				function init_map1() {
+				    var myOptions1 = {
+				        zoom: 15,
+				        center: new google.maps.LatLng(1.264241, 103.822327),
+				        mapTypeId: google.maps.MapTypeId.ROADMAP
+				    };
+				    map1 = new google.maps.Map(document.getElementById("gmap_canvas3"), myOptions1);
+				    marker1 = new google.maps.Marker({
+				        map: map1,
+				        position: new google.maps.LatLng(1.264241, 103.822327),
+				        icon: "images/location-marker.png"
+				    });
+				    infowindow1 = new google.maps.InfoWindow({
+				        content: "<b>1 Harbourfront Walk,</b><br/>01-21 VivoCity,<br />098585 Singapore"
+				    });
+				    google.maps.event.addListener(marker1, "click", function() {
+				        infowindow1.open(map1, marker1);
+				    });
+				}
+				google.maps.event.addDomListener(window, 'load', init_map1);
+			</script>
+		</div>
+		
+		<div class="address_div rws">
+			<a href="javascript:void(0);" id=rws class=close><img src="images/close-icon.png" alt="michael kors"></a>
+			<p><strong>Resorts World Sentosa</strong></p>
+			<p>8 Sentosa Gateway, 02-129 Luxury Fashion Galleria, Singapore 098269</p>
+			<div style="overflow:hidden;height:400px;width:100%;">
+				<div id=gmap_canvas4 style="height:400px;width:100%;"></div>
+			</div>
+			<script>
+				function init_map1() {
+				    var myOptions1 = {
+				        zoom: 15,
+				        center: new google.maps.LatLng(1.256752, 103.820331),
+				        mapTypeId: google.maps.MapTypeId.ROADMAP
+				    };
+				    map1 = new google.maps.Map(document.getElementById("gmap_canvas4"), myOptions1);
+				    marker1 = new google.maps.Marker({
+				        map: map1,
+				        position: new google.maps.LatLng(1.256752, 103.820331),
+				        icon: "images/location-marker.png"
+				    });
+				    infowindow1 = new google.maps.InfoWindow({
+				        content: "<b>8 Sentosa Gateway,</b><br/>02-129 Luxury Fashion Galleria,<br />Singapore 098269"
+				    });
+				    google.maps.event.addListener(marker1, "click", function() {
+				        infowindow1.open(map1, marker1);
+				    });
+				}
+				google.maps.event.addDomListener(window, 'load', init_map1);
+			</script>
+		</div>					
+		
+		<div class="address_div mbs">
+			<a href="javascript:void(0);" id=mbs class=close><img src="images/close-icon.png" alt="michael kors"></a>
+			<p><strong>Marina Bay Sands</strong></p>
+			<p>10 Bayfront Avenue, B2-21/22 Marina Bay Sands, 018956 Singapore</p>
+			<div style="overflow:hidden;height:400px;width:100%;">
+				<div id=gmap_canvas5 style="height:400px;width:100%;"></div>
+			</div>
+			<script>
+				function init_map1() {
+				    var myOptions1 = {
+				        zoom: 15,
+				        center: new google.maps.LatLng(1.283879, 103.85899),
+				        mapTypeId: google.maps.MapTypeId.ROADMAP
+				    };
+				    map1 = new google.maps.Map(document.getElementById("gmap_canvas5"), myOptions1);
+				    marker1 = new google.maps.Marker({
+				        map: map1,
+				        position: new google.maps.LatLng(1.283879, 103.85899),
+				        icon: "images/location-marker.png"
+				    });
+				    infowindow1 = new google.maps.InfoWindow({
+				        content: "<b>10 Bayfront Avenue,</b><br/>B2-21/22 Marina Bay Sands,<br />018956 Singapore"
+				    });
+				    google.maps.event.addListener(marker1, "click", function() {
+				        infowindow1.open(map1, marker1);
+				    });
+				}
+				google.maps.event.addDomListener(window, 'load', init_map1);
+			</script>
+		</div>
+		
+		<div class="address_div mks">
+			<a href="javascript:void(0);" id=mks class=close><img src="images/close-icon.png" alt="michael kors"></a>
+			<p><strong>Michael Kors Changi Terminal 2 Departure</strong></p>
+			<p>60 Airport Boulevard, 026-084 Changi Airport Terminal 2 Departures, Singapore 819643</p>
+			<div style="overflow:hidden;height:400px;width:100%;">
+				<div id=gmap_canvas6 style="height:400px;width:100%;"></div>
+			</div>
+			<script>
+				function init_map1() {
+				    var myOptions1 = {
+				        zoom: 15,
+				        center: new google.maps.LatLng(1.355322, 103.988337),
+				        mapTypeId: google.maps.MapTypeId.ROADMAP
+				    };
+				    map1 = new google.maps.Map(document.getElementById("gmap_canvas6"), myOptions1);
+				    marker1 = new google.maps.Marker({
+				        map: map1,
+				        position: new google.maps.LatLng(1.355322, 103.988337),
+				        icon: "images/location-marker.png"
+				    });
+				    infowindow1 = new google.maps.InfoWindow({
+				        content: "<b>60 Airport Boulevard,</b><br/>026-084 Changi Airport Terminal 2 Departures,<br />Singapore 819643"
+				    });
+				    google.maps.event.addListener(marker1, "click", function() {
+				        infowindow1.open(map1, marker1);
+				    });
+				}
+				google.maps.event.addDomListener(window, 'load', init_map1);
+			</script>
+		</div>
+		
+		<div class="address_div tdeparture">
+			<a href="javascript:void(0);" id=tdeparture class=close><img src="images/close-icon.png" alt="michael kors"></a>
+			<p><strong>Michael Kors Changi Terminal 3 Departure</strong></p>
+			<p>60 Airport Boulevard, 02-06 Changi Airport Terminal 3, 819643 Singapore</p>
+			<div style="overflow:hidden;height:400px;width:100%;">
+				<div id=gmap_canvas7 style="height:400px;width:100%;"></div>
+			</div>
+			<script>
+				function init_map1() {
+				    var myOptions1 = {
+				        zoom: 15,
+				        center: new google.maps.LatLng(1.355322, 103.988337),
+				        mapTypeId: google.maps.MapTypeId.ROADMAP
+				    };
+				    map1 = new google.maps.Map(document.getElementById("gmap_canvas7"), myOptions1);
+				    marker1 = new google.maps.Marker({
+				        map: map1,
+				        position: new google.maps.LatLng(1.355322, 103.988337),
+				        icon: "images/location-marker.png"
+				    });
+				    infowindow1 = new google.maps.InfoWindow({
+				        content: "<b>60 Airport Boulevard,</b><br/>02-06 Changi Airport Terminal 3,<br />819643 Singapore"
+				    });
+				    google.maps.event.addListener(marker1, "click", function() {
+				        infowindow1.open(map1, marker1);
+				    });
+				}
+				google.maps.event.addDomListener(window, 'load', init_map1);
+			</script>
+		</div>
+
+		<script>Cufon.now();</script>
+		<script type="text/javascript">
+			$('html').on('touchend', function() {
+				if ($.cookie('modal_shown') == null) {
+			        $.cookie('modal_shown', 'yes', { expires: 7, path: '/' });
+					$('#bio_ep, #bio_ep_bg').show();
+				}
+			})
+		</script>
+	</body>
+</html>

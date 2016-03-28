@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html> <!--syntax to open an html file-->
+<head> <!--opening head element, where external files(css, javascript, jquery) links are given which will be used here, we can also insert js script or internal css in head    -->
+
+<title>Thank You - Michael Kors</title>  <!--name of our webiste which is shown at browser tab -->
+
+<!-- Meta Tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- set the viewport width to the width of the device and set the initial scale to 1-->
+<link rel="shortcut icon" href="favicon.png"> <!--showing favicon(small image followed by website name in browser tab) -->
+<meta name="apple-mobile-web-app-capable" content="yes"> <!--Sets whether a web application runs in full-screen mode.-->
+<meta name="mobile-web-app-capable" content="yes"> <!--Supporting homescreen-installed apps prior to M39 (for example on mobile we show an icon for that application of website)-->
+
+<!-- CSS -->
+<link href="css.normalize.css" rel="stylesheet">  <!--link to external stylesheet noramlize.css (placed in css folder) which is used in this html file-->
+<link href="css/style.css" rel="stylesheet"> <!--link to external stylesheet style.css (placed in css folder) which is used in this html file-->
+
+
+<!-- JavaScript -->
+<script src="script/jquery-1.11.1.min.js"></script> <!--loading jquery file for responsive website placed in script folder-->
+<script src="script/cufon-yui.js"></script>  <!--script used for cufon fonts-->
+<script src="script/Gotham_Book_325-Gotham_Rounded_Medium_350.font.js"></script> <!-- script used for font-family:Gotham Book, file name is Gotham_Book_325-Gotham_Rounded_Medium_350.font.js placed in folder "script"-->
+<script src="script/Caslon-Light_400.font.js"></script> <!-- script used for font-family:Caslon-Light, file name is Caslon-Light_400.font.js placed in folder "script"-->
+<script type="text/javascript"> <!--starting tag for jquery-->
+Cufon.replace('.text', { fontFamily: 'Gotham Book' });  <!-- Tell Cufón to replace the fonts for class text with font-family:gotham book-->
+Cufon.replace('.title', { fontFamily: 'Caslon-Light' });  <!-- Tell Cufón to replace the fonts for class title with font-family:Caslon-Light-->
+
+/*var cd = 5;
+var timer_countdown = function() {
+	if(cd > 0) cd--;
+	$('.countdown').html(cd);
+	
+	if(cd==0) {
+		window.location = 'index.html';
+		clearInterval(timer_countdown)
+		return;
+	}
+}
+$(document).ready(function() {
+	$('.countdown').html(cd);
+	setInterval(timer_countdown, 1000);
+});*/
+</script> <!--close jquery code-->
+
+<!--[if lt IE 10]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head> <!--close head-->
+
+<body id="public"> <!--body of html page whatever shown on our website all is in body of html-->
+<div id="container" class="ltr"> <!--opening division container and class ltr-->
+
+	<div id="logo"><img src="images/logo.png" alt="michael kors" /></div> <!--showing black color text image written michael kors at center-->
+	<br /> <!--new line-->
+	<div class="divider"></div> <!--division for text-->
+	
+	<br> <!--new line-->
+	<div class="title" style="font-size:38px; text-align:center; line-height:1; margin:0 0 12px;">THANK YOU</div> <!--thank you-->
+	<div class="text" style="font-size:18px; text-align:center; line-height:1; margin:0 0 12px;">FOR REGISTERING WITH US</div> <!--for registering with us-->
+	
+	<p align="center"><a href="javascript:history.back();">back to page</a></p> <!--by clicking on 'back to page' home page will appear-->
+</div><!--close container--> 
+
+<script type="text/javascript"> Cufon.now(); </script>
+</body> <!--close body of html-->
+</html> <!--close html-->

@@ -782,7 +782,7 @@ table.oui-form-poup tr td {
     #store_box .store {
         float: left;
         width: 50%;
-        height: 218px;
+        height: 166px;
     }
     .store_scotts_sq {
         border-right: 1px solid #b8b8b8;
@@ -852,6 +852,8 @@ table.oui-form-poup tr td {
         height: 240px;
     }
     #store_box .store {
+         border-bottom: 1px solid #b8b8b8;
+         padding-bottom: 20px;
         float: none;
         width: 100%;
         margin: 0 0 24px;

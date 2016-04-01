@@ -73,7 +73,7 @@
 			    //load year
 				var start = 1900,
 			   	end = new Date().getFullYear(),
-			    select = document.getElementById('Field7');
+			    select = document.getElementById('Field5');
 			    
 				for (var year = start ; year <=end; year++){
 				    var opt = document.createElement('option');
@@ -335,22 +335,22 @@
 								<table class="wufoo-main-form">
 									<tr>
 										<td class="bottom-pad">
-											<input type="text" id="Field1" name="fname" placeholder="FIRST NAME*" spellcheck=false class="field text large" value="" maxlength=255 tabindex=2 required/>
+											<input type="text" id="Field3" name="Field3" placeholder="FIRST NAME*" spellcheck=false class="field text large" value="" maxlength=255 tabindex=2 required/>
 										</td>
 									</tr>
 									<tr>
 										<td class="bottom-pad">
-											<input id="Field2" name="lname" type="text" spellcheck=false  placeholder="LAST NAME*" class="field text large"value="" maxlength=255 tabindex=2 required/>
+											<input id="Field8" name="Field8" type="text" spellcheck=false  placeholder="LAST NAME*" class="field text large"value="" maxlength=255 tabindex=2 required/>
 										</td>
 									</tr>
 									<tr>
 										<td class="bottom-pad">
-											<input id="Field3" name="email" type="email" spellcheck=false placeholder="EMAIL*" class="field text large"value="" maxlength=255 tabindex=2 required/>
+											<input id="Field1" name="Field1" type="email" spellcheck=false placeholder="EMAIL*" class="field text large"value="" maxlength=255 tabindex=2 required/>
 										</td>
 									</tr>
 									<tr>
 										<td class="bottom-pad">
-											<input id="Field4" name="number" type="text" placeholder="MOBILE*" spellcheck=false class="field text large"value="" maxlength=255 tabindex=2 required/>
+											<input id="Field10" name="Field10" type="text" placeholder="MOBILE*" spellcheck=false class="field text large"value="" maxlength=255 tabindex=2 required/>
 										</td>
 									</tr>
 									<tr>
@@ -359,7 +359,7 @@
 									<tr>
 										<td class="bottom-pad datepicker-outer-wrappper clearfix">
 											<div class="datepicker-wrapper day">
-												<select name="date" class="width-30" id="Field5" required>
+												<select name="Field5-1" class="width-30" id="Field51" required>
 													<option value="" disabled selected>DAY</option>
 													<option value="01">01</option>
 													<option value="02">02</option>
@@ -395,7 +395,7 @@
 												</select>
 											</div>
 											<div class="datepicker-wrapper month">
-												<select name="month" class="width-30" id="Field6" required>
+												<select name="Field5-2" class="width-30" id="Field52" required>
 													<option value="" disabled selected>MONTH</option>
 													<option value="01">January</option>
 													<option value="02">February</option>
@@ -412,7 +412,7 @@
 												</select>
 											</div>
 											<div class="datepicker-wrapper year">
-												<select class="width-30" name="year" id="Field7" required>
+												<select class="width-30" name="Field5" id="Field5" required>
 													<option value="" disabled selected>YEAR</option>
 												</select>
 											</div>
@@ -427,12 +427,13 @@
 									<tr>
 										<td class="clearfix">
 											<div class="radio-option-wrapper">
+												<input id="radioDefault_17" name="Field17" type="hidden" value="" />
 												<div class="option-wrapper">
-													<input class="option-button" type="radio" name="option" value="yes"  checked/><span class="radio-option">YES</span>
+													<input class="field radio" type="radio" name="Field17" id="Field17_0" value="YES" checked="checked" required/><span class="radio-option">YES</span>
 												</div>
 												
 												<div class="option-wrapper">
-													<input class="option-button" type="radio" name="option" value="no" /><span class="radio-option">NO</span>
+													<input class="field radio" type="radio" name="Field17" id="Field17_1" value="NO" required/><span class="radio-option">NO</span>
 												</div>
 												
 											</div>
@@ -468,9 +469,9 @@
 								$(document).ready(function(){
 									//validate age
 									$.validator.addMethod("check_date_of_birth", function(value, element) {
-										var day = $("#Field5").val();
-										var month = $("#Field6").val();
-										var year = $("#Field7").val();
+										var day = $("#Field51").val();
+										var month = $("#Field52").val();
+										var year = $("#Field5").val();
 										var age =  18;
 										//get current date -1 
 										var mydate = new Date();
@@ -485,25 +486,25 @@
 
 									$("#form81").validate({
 										rules: {
-							        		fname: "required",
-							        		lname: "required",
-							        		email: {
+							        		Field3: "required",
+							        		Field8: "required",
+							        		Field1: {
 							        			required: true,
 							        			email: true
 							        		},
-							        		number: "required",
-							        		date: "required",
-							        		month: "required",
-							        		year: { check_date_of_birth: true }
+							        		Field10: "required",
+							        		Field51: "required",
+							        		Field52: "required",
+							        		Field5: { check_date_of_birth: true }
 								        },
 								        messsages: {
-								        	fname: "Please enter first name",
-								        	lname: "Please enter last name",
-								        	email: "Please enter email",
-								        	mobile: "Please enter mobile",
-								        	date: "Please enter date",
-								        	month: "Please enter month",
-								        	year: "Please enter year"
+								        	Field3: "Please enter first name",
+								        	Field8: "Please enter last name",
+								        	Field1: "Please enter email",
+								        	Field10: "Please enter mobile",
+								        	Field52: "Please enter date",
+								        	Field52: "Please enter month",
+								        	Field5: "Please enter year"
 								        },
 							        	submitHandler: function(form) {
 								            $('.popup.loading').show();
